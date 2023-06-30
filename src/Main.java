@@ -27,7 +27,7 @@ public class Main {
         jogadas.add( new Cordenada(6,3));
     }
 
-    private static boolean atirar( Cordenada c ) {
+    private static boolean atirar( Cordenada c ) {//metodo atirar recebe uma variavel do tipo cordenada c
         boolean acertou = false;
         int indice = 0;
         int forca = 0;
@@ -50,10 +50,10 @@ public class Main {
     }
 
     private static LinkedList<Embarcacao> criar() {
-        LinkedList<Embarcacao> embarcacoes = new LinkedList<>();
-        embarcacoes.add( new Embarcacao(1,1,5, "N",true) );
+        LinkedList<Embarcacao> embarcacoes = new LinkedList<>(); // objeto do tipo linked list de nome embarcacoes, nova linked list
+        embarcacoes.add( new Embarcacao(1,1,5, "N",true) ); // adiciona na lista criada um novo objeto embarcaçao // DAQUI VAI PRA CLASSE EMBARCACAO PRA ENTENDER
         embarcacoes.add( new Embarcacao(2,1,5, "N",false) );
         embarcacoes.add( new Embarcacao(3,3,2, "s", true) );
-        return embarcacoes;
+        return embarcacoes;//retorna a lista ATUALIZADA de embarcacoes com todos os seus objetos ja criados
     }
 }

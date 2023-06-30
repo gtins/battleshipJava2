@@ -2,7 +2,8 @@ public class Cordenada {
     private int x;
     private int y;
 
-    public Cordenada(int x, int y) {
+    public Cordenada(int x, int y) { //construtor padrao da cordenada, recebe X e Y e define que o objeto cordenada tem esses dois valores respectivamente
+        //volta para embarcacoes pra entender
         this.x = x;
         this.y = y;
     }
